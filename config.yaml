@@ -1,0 +1,158 @@
+baseURL:                 https://ankhterus.github.io/
+title:                   Nicolas Gagnière
+theme:                   hugo-orbit-theme
+
+defaultcontentlanguage:  fr
+disable404:              true
+disablerss:              true
+disablesitemap:          true
+
+# googleAnalytics:       UA-108139175-1
+
+params:
+  # Metadata
+  author:                Nicolas Gagnière
+  description:           Nicolas Gagnière CV
+  styles:                styles-4.css
+
+# Sidebar
+  profile:
+    name:                Nicolas Gagnière
+    tagline:             Amateur de Bretzels
+    avatar:              profile.png
+
+  contact:
+    enable:              true
+    list:
+      - class:           email
+        icon:            fa-envelope
+        url:             mailto:nicolas.gagniere@gmail.com
+        title:           nicolas.gagniere@gmail.com
+
+      - class:           linkedin
+        icon:            fa-linkedin
+        url:             //linkedin.com/in/nicolasgagniere
+        title:           linkedin.com/in/nicolasgagniere
+
+      - class:           github
+        icon:            fa-github
+        url:             //github.com/Ankhterus
+        title:           github.com/Ankhterus
+
+  education:
+    enable:              true
+    list:
+      - degree:          Doctorat de Bioinformatique
+        college:         Université de Strasbourg / IGBMC
+        dates:           sept. 2006 - oct. 2009
+
+  language:
+    enable:              true
+    list:
+      - language:        Français
+        level:           Natif
+      - language:        Anglais
+        level:           Courant
+
+  interests:
+    enable:              true
+    list:
+      - interest:        Escalade
+      - interest:        Geekeries
+
+# Main content
+  summary:
+    enable:              true
+    icon:                fa-user
+    summary:             |
+      wololooooo
+
+  experiences:
+    enable:              true
+    icon:                fa-briefcase
+  jobs:
+    list:
+      - position:        Directeur technique
+        dates:           oct. 2010 - Aujourd'hui
+        company:         Bionext S.A., Strasbourg
+        details:         |
+          wololooooo
+
+      - position:        Doctorant chercheur
+        dates:           sept. 2006 - oct. 2009
+        company:         IGBMC, Illkirch-Graffenstaden
+        details:         |
+          wololooooo
+
+  projects:
+    enable:              true
+    icon:                fa-archive
+    intro:               |
+      wololooooo
+    list:
+      - title:           BioSight
+        url:             https://biosight.bionext.com/
+        tagline:         |
+          wololooooo
+
+      - title:           Alvinella cDNA
+        url:             http://lbgi.fr/Alvinella/
+        tagline:         |
+          wololooooo
+
+  skills:
+    enable:              true
+    icon:                fa-rocket
+    list:
+# distributed computing
+      - skill:           Hadoop/MapReduce
+        level:           85%
+      - skill:           HBase
+        level:           85%
+      - skill:           Oozie
+        level:           85%
+      - skill:           Elasticsearch
+        level:           85%
+# provisionning
+      - skill:           MAAS
+        level:           85%
+      - skill:           Ansible
+        level:           85%
+      - skill:           Docker
+        level:           33%
+      - skill:           Vagrant / VirtualBox
+# java
+      - skill:           Java 8
+        level:           95%
+      - skill:           Maven
+        level:           95%
+      - skill:           Hibernate / JPA
+        level:           95%
+      - skill:           Jersey / JAX-RS
+        level:           95%
+      - skill:           JAXB
+        level:           95%
+      - skill:           javacc
+        level:           95%
+# coding
+      - skill:           Git
+        level:           95%
+      - skill:           Subversion
+        level:           95%
+# databases
+      - skill:           PostgreSQL
+        level:           85%
+      - skill:           MySQL
+        level:           85%
+      - skill:           H2
+        level:           85%
+      - skill:           SQLite
+        level:           85%
+# sysadmin
+      - skill:           Ubuntu / Debian
+      - skill:           Gitlab
+      - skill:           Mattermost
+      - skill:           Mediawiki
+
+  footer:
+    copyright:           ""
