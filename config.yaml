@@ -1,5 +1,4 @@
 baseURL:                 https://ankhterus.github.io/
-title:                   Nicolas Gagnière
 theme:                   hugo-orbit-theme
 
 defaultcontentlanguage:  fr
@@ -12,6 +11,7 @@ disablesitemap:          true
 params:
   # Metadata
   author:                Nicolas Gagnière
+  title:                 Nicolas Gagnière - CV
   description:           Nicolas Gagnière CV
   styles:                styles-4.css
 
@@ -33,6 +33,11 @@ params:
         icon:            fa-linkedin
         url:             //linkedin.com/in/nicolasgagniere
         title:           linkedin.com/in/nicolasgagniere
+
+      - class:           website
+        icon:            fa-globe
+        url:             //ankhterus.github.io/
+        title:           ankhterus.github.io
 
       - class:           github
         icon:            fa-github
@@ -65,7 +70,11 @@ params:
     enable:              true
     icon:                fa-user
     summary:             |
-      wololooooo
+        Parti d'un bac technologique en biologie (STL BGB), d'études courtes en études courtes en passant par une thèse en Bioinformatique, je me suis peu à peu réorienté vers l'informatique pour laquelle j'ai une affinité particulière après avoir été élevé par un C64 à grand renforts de POKE et PEEK.
+
+        Mes passages au sein de plusieurs équipes hétéroclites et pluridisciplinaires et ma curiosité m'ont permis de régulièrement challenger et étendre mes compétences de développement en divers langages/_frameworks_, ainsi qu'en administration systèmes et réseaux Linux.
+
+        En combinaison avec une veille technologique constante, j'ai ainsi acquis une bonne vision globale de l'informatique en général, ce qui me permet de m'orienter relativement rapidement vers une solution.
 
   experiences:
     enable:              true
@@ -76,56 +85,80 @@ params:
         dates:           oct. 2010 - Aujourd'hui
         company:         Bionext S.A., Strasbourg
         details:         |
-          wololooooo
+          Je dirige actuellement l'équipe technique en charge du développement et du déploiement de _BioSight_, une application permettant la comparaison de surfaces moléculaires dans le cadre de la recherche et du développement de cibles thérapeutiques à l'aide d'un algorithme développé en interne par notre équipe R&D.
+
+          Je me suis occupé personnellement d'intégrer cet algorithme au sein d'une nouvelle architecture de calculs distribués. Cela comprend :
+
+          * la gestion de l'_Extract-Transform-Load_ des données au sein de _HBase_ et des index _Elasticsearch_,
+          * le développement de _jobs Mapreduce_ et leur organisation en _workflows Oozie_
+          * la mise à disposition de l'architecture de calculs au portail _BioSight_ par l'intermédiaire d'un _WebService REST_,
+          * le déploiement _bare-metal_ des serveurs à l'aide de _MAAS_ et d'_Ansible_.
+
+          Tâches annexes :
+
+          * développement du logiciel de visualisation moléculaire interne _BioViz_ (Java),
+          * déploiement de toute l'infrastructure du site de Strasbourg (serveurs, stockages réseaux, postes clients, git, _team chat_, wiki, DNS dynamique, sauvegardes...) accessible de manière sécurisée par certificats SSH et TLS.
 
       - position:        Doctorant chercheur
         dates:           sept. 2006 - oct. 2009
         company:         IGBMC, Illkirch-Graffenstaden
         details:         |
-          wololooooo
+          J'ai développé une suite logicielle permettant de traiter et d'annoter les données de séquençage issues de plusieurs banques d'ADNc de tissus de l'annélide polychète _Alvinella pompejana_ (ver de Pompéi) afin de l'étudier sous différents aspects (phylogénétique moléculaire, résistances aux conditions extrêmes...).
+
+          Cette suite a été développée en Tcl/Tk afin d'être intégrée à la plate-forme logicielle du laboratoire développée dans ce même langage. Un site Web permettant aux membres du consortium _Alvinella_ de parcourir le résultat de ces annotations a été développé en PHP4.
+
+          Manuscript disponible à cette adresse : http://scd-theses.u-strasbg.fr/1814/
 
   projects:
     enable:              true
     icon:                fa-archive
-    intro:               |
-      wololooooo
+    # intro:             |
     list:
       - title:           BioSight
         url:             https://biosight.bionext.com/
         tagline:         |
-          wololooooo
+          Portail d'accès _Software as a Service_ de BioSight, application principale de Bionext permettant la comparaison de surfaces moléculaires dans le cadre de la conception de médicaments.
+
+          Technologies : Hadoop, YARN/MapReduce2, HBase, Oozie, Elasticsearch, Hibernate, Jersey
 
       - title:           Alvinella cDNA
         url:             http://lbgi.fr/Alvinella/
         tagline:         |
-          wololooooo
+          Portail de partage et de recherches au sein des résultats de traitements et d'annotations des données de séquençage d'_Alvinella pompejana_.
+
+          Technologies : PHP4, ADOdb, PostgreSQL, Smarty, MVC. (Portage Symfony 1.0/Doctrine non finalisé)
 
   skills:
     enable:              true
     icon:                fa-rocket
     list:
-# distributed computing
+      - section:         Cloud computing
       - skill:           Hadoop/MapReduce
-        level:           85%
+        level:           90%
       - skill:           HBase
-        level:           85%
+        level:           90%
       - skill:           Oozie
-        level:           85%
+        level:           60%
       - skill:           Elasticsearch
-        level:           85%
-# provisionning
+        level:           75%
+      - skill:           Cassandra
+        level:           40%
+
+      - section:         Provisioning
       - skill:           MAAS
-        level:           85%
+        level:           66%
       - skill:           Ansible
-        level:           85%
+        level:           80%
       - skill:           Docker
         level:           33%
       - skill:           Vagrant / VirtualBox
-# java
+        level:           33%
+
+      - section:         Java
       - skill:           Java 8
-        level:           95%
+        level:           100%
       - skill:           Maven
-        level:           95%
+        level:           90%
       - skill:           Hibernate / JPA
         level:           95%
       - skill:           Jersey / JAX-RS
@@ -133,26 +166,53 @@ params:
       - skill:           JAXB
         level:           95%
       - skill:           javacc
-        level:           95%
-# coding
+        level:           80%
+
+      - section:         Autres langages / frameworks
+      - skill:           HTML 5
+        level:           80%
+      - skill:           CSS 3
+        level:           70%
+      - skill:           Javascript
+        level:           85%
+      - skill:           jQuery/ jQuery UI
+        level:           90%
+      - skill:           Bootstrap
+        level:           40%
+      - skill:           Grails
+        level:           50%
+      - skill:           Python 3
+        level:           40%
+      - skill:           NodeJS / Express
+        level:           65%
+
+      - section:         Développement
       - skill:           Git
         level:           95%
       - skill:           Subversion
         level:           95%
-# databases
+
+      - section:         Bases de données
       - skill:           PostgreSQL
-        level:           85%
+        level:           95%
       - skill:           MySQL
         level:           85%
       - skill:           H2
-        level:           85%
+        level:           84%
       - skill:           SQLite
-        level:           85%
-# sysadmin
+        level:           70%
+
+      - section:         Sysadmin
       - skill:           Ubuntu / Debian
+        level:           95%
+      - skill:           Open/LibreSSL
+        level:           90%
       - skill:           Gitlab
+        level:           95%
       - skill:           Mattermost
+        level:           70%
       - skill:           Mediawiki
+        level:           80%
 
   footer:
     copyright:           ""
