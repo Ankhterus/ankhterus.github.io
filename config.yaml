@@ -165,6 +165,8 @@ params:
         level:           95%
       - skill:           JAXB
         level:           95%
+      - skill:           ProGuard
+        level:           85%
       - skill:           javacc
         level:           80%
 
@@ -207,12 +209,16 @@ params:
         level:           95%
       - skill:           Open/LibreSSL
         level:           90%
+      - skill:           Apache HTTPD
+        level:           90%
       - skill:           Gitlab
         level:           95%
       - skill:           Mattermost
         level:           70%
       - skill:           Mediawiki
         level:           80%
+      - skill:           Apache Archiva
+        level:           85%
 
   footer:
     copyright:           ""
