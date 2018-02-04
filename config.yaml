@@ -6,7 +6,7 @@ disable404:              true
 disablerss:              true
 disablesitemap:          true
 
-# googleAnalytics:       UA-108139175-1
+googleAnalytics:         UA-108139175-1
 
 params:
   # Metadata
@@ -81,11 +81,17 @@ params:
     icon:                fa-briefcase
   jobs:
     list:
+      - position:        À la recherche de l'emploi perdu
+        dates:           Actuellement
+        company:         Continent perdu Bhâ-Rihnoâh
+        details:         |
+          Je pars à l'aventure au sein de la jungle de la recherche d'emploi afin de retrouver l’artefact du _CDI-au-projet-sympa-et-stimulant_. Si vous recherchez un _lead developper_ sur Strasbourg ou sa région, n'hésitez pas à me contacter.
+
       - position:        Directeur technique
-        dates:           oct. 2010 - Aujourd'hui
+        dates:           oct. 2010 - janv. 2018
         company:         Bionext S.A., Strasbourg
         details:         |
-          Je dirige actuellement l'équipe technique en charge du développement et du déploiement de _BioSight_, une application permettant la comparaison de surfaces moléculaires dans le cadre de la recherche et du développement de cibles thérapeutiques à l'aide d'un algorithme développé en interne par notre équipe R&D.
+          J'ai dirigé l'équipe technique de 4 personnes (3 permanents et 1 temps partiel), en charge du développement et du déploiement de _BioSight_, une application permettant la comparaison de surfaces moléculaires dans le cadre de la recherche et du développement de cibles thérapeutiques à l'aide d'un algorithme développé en interne par l'équipe R&D.
 
           Je me suis occupé personnellement d'intégrer cet algorithme au sein d'une nouvelle architecture de calculs distribués. Cela comprend :
 
