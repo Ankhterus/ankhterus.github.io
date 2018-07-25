@@ -81,11 +81,17 @@ params:
     icon:                fa-briefcase
   jobs:
     list:
-      - position:        À la recherche de l'emploi perdu
-        dates:           Actuellement
-        company:         Continent perdu Bhâ-Rihnoâh
+      # - position:        À la recherche de l'emploi perdu
+      #   dates:           Actuellement
+      #   company:         Continent perdu Bhâ-Rihnoâh
+      #   details:         |
+      #     Je pars à l'aventure au sein de la jungle de la recherche d'emploi afin de retrouver l’artefact du _CDI-au-projet-sympa-et-stimulant_. Si vous recherchez un _lead developer_ sur Strasbourg ou sa région, n'hésitez pas à me contacter.
+
+      - position:        Consultant Java
+        dates:           juin 2018 - Aujourd'hui
+        company:         Astek, Strasbourg
         details:         |
-          Je pars à l'aventure au sein de la jungle de la recherche d'emploi afin de retrouver l’artefact du _CDI-au-projet-sympa-et-stimulant_. Si vous recherchez un _lead developer_ sur Strasbourg ou sa région, n'hésitez pas à me contacter.
+          Je découvre le monde des ESN tout en m'amusant au sein d'une équipe soudée. Merci de m'avoir fait confiance !
 
       - position:        Directeur technique
         dates:           oct. 2010 - janv. 2018
@@ -156,15 +162,19 @@ params:
       - skill:           Ansible
         level:           80%
       - skill:           Docker
-        level:           33%
+        level:           70%
       - skill:           Vagrant / VirtualBox
-        level:           33%
+        level:           75%
 
       - section:         Java
       - skill:           Java 8
         level:           100%
       - skill:           Maven
         level:           90%
+      - skill:           Gradle
+        level:           30%
+      - skill:           Spring Boot
+        level:           50%
       - skill:           Hibernate / JPA
         level:           95%
       - skill:           Jersey / JAX-RS
