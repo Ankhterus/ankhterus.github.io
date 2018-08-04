@@ -155,6 +155,10 @@ params:
         level:           75%
       - skill:           Cassandra
         level:           40%
+      - skill:           Logstash
+        level:           60%
+      - skill:           Kibana
+        level:           50%
 
       - section:         Provisioning
       - skill:           MAAS
@@ -227,6 +231,10 @@ params:
         level:           90%
       - skill:           Apache HTTPD
         level:           90%
+      - skill:           Nginx
+        level:           50%
+      - skill:           HAproxy
+        level:           40%
       - skill:           Gitlab
         level:           95%
       - skill:           Mattermost
