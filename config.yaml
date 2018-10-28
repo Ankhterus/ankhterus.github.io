@@ -161,24 +161,26 @@ params:
         level:           50%
 
       - section:         Provisioning
-      - skill:           MAAS
-        level:           66%
+      - skill:           Kubernetes
+        level:           75%
+      - skill:           Docker
+        level:           85%
+      - skill:           Vagrant / VirtualBox
+        level:           80%
       - skill:           Ansible
         level:           80%
-      - skill:           Docker
-        level:           70%
-      - skill:           Vagrant / VirtualBox
-        level:           75%
+      - skill:           MAAS
+        level:           66%
 
       - section:         Java
-      - skill:           Java 8
+      - skill:           Java 1x
         level:           100%
       - skill:           Maven
         level:           90%
       - skill:           Gradle
-        level:           30%
-      - skill:           Spring Boot
         level:           50%
+      - skill:           Spring Boot
+        level:           60%
       - skill:           Hibernate / JPA
         level:           95%
       - skill:           Jersey / JAX-RS
@@ -209,6 +211,8 @@ params:
         level:           65%
 
       - section:         Développement
+      - skill:           Gitlab CI/CD
+        level:           70%
       - skill:           Git
         level:           95%
       - skill:           Subversion
@@ -234,7 +238,7 @@ params:
       - skill:           Nginx
         level:           50%
       - skill:           HAproxy
-        level:           40%
+        level:           60%
       - skill:           Gitlab
         level:           95%
       - skill:           Mattermost
