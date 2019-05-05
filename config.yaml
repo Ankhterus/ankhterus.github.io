@@ -87,7 +87,7 @@ params:
       #   details:         |
       #     Je pars à l'aventure au sein de la jungle de la recherche d'emploi afin de retrouver l’artefact du _CDI-au-projet-sympa-et-stimulant_. Si vous recherchez un _lead developer_ sur Strasbourg ou sa région, n'hésitez pas à me contacter.
 
-      - position:        Consultant Java
+      - position:        Architecte Java et DevOps
         dates:           juin 2018 - Aujourd'hui
         company:         Astek, Strasbourg
         details:         |
@@ -119,7 +119,9 @@ params:
 
           Cette suite a été développée en Tcl/Tk afin d'être intégrée à la plate-forme logicielle du laboratoire développée dans ce même langage. Un site Web permettant aux membres du consortium _Alvinella_ de parcourir le résultat de ces annotations a été développé en PHP4.
 
-          Manuscript disponible à cette adresse : http://scd-theses.u-strasbg.fr/1814/
+          Résumé: http://www.theses.fr/2009STRA6160
+
+          Manuscript: [Thèse N.Gagnière 2009](/assets/docs/TheseGagniere2009.pdf)
 
   projects:
     enable:              true
@@ -162,9 +164,11 @@ params:
 
       - section:         Provisioning
       - skill:           Kubernetes
-        level:           75%
-      - skill:           Docker
         level:           85%
+      - skill:           Helm
+        level:           80%
+      - skill:           Docker
+        level:           90%
       - skill:           Vagrant / VirtualBox
         level:           80%
       - skill:           Ansible
@@ -199,6 +203,8 @@ params:
         level:           70%
       - skill:           Javascript
         level:           85%
+      - skill:           Vue.js
+        level:           75%
       - skill:           jQuery/ jQuery UI
         level:           90%
       - skill:           Bootstrap
