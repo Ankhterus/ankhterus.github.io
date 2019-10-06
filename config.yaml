@@ -146,6 +146,26 @@ params:
     enable:              true
     icon:                fa-rocket
     list:
+      - section:         Cloud Native
+      - skill:           Kubernetes
+        level:           90%
+      - skill:           Docker
+        level:           90%
+      - skill:           RKE / Rancher Kubernetes Engine
+        level:           90%
+      - skill:           CoreOS / Container Linux
+        level:           65%
+      - skill:           Helm
+        level:           85%
+      - skill:           Prometheus
+        level:           70%
+      - skill:           Rook
+        level:           70%
+      - skill:           KubeDB
+        level:           70%
+      - skill:           Istio
+        level:           50%
+
       - section:         Cloud computing
       - skill:           Hadoop/MapReduce
         level:           90%
@@ -163,12 +183,8 @@ params:
         level:           50%
 
       - section:         Provisioning
-      - skill:           Kubernetes
-        level:           85%
-      - skill:           Helm
-        level:           80%
-      - skill:           Docker
-        level:           90%
+      - skill:           Terraform
+        level:           75%
       - skill:           Vagrant / VirtualBox
         level:           80%
       - skill:           Ansible
@@ -184,7 +200,7 @@ params:
       - skill:           Gradle
         level:           50%
       - skill:           Spring Boot
-        level:           60%
+        level:           70%
       - skill:           Hibernate / JPA
         level:           95%
       - skill:           Jersey / JAX-RS
@@ -197,15 +213,17 @@ params:
         level:           80%
 
       - section:         Autres langages / frameworks
+      - skill:           Javascript ES6
+        level:           90%
+      - skill:           Vue.js / Vuex / Vuetify
+        level:           85%
+      - skill:           NodeJS / Express
+        level:           75%
       - skill:           HTML 5
         level:           80%
       - skill:           CSS 3
         level:           70%
-      - skill:           Javascript
-        level:           85%
-      - skill:           Vue.js
-        level:           75%
-      - skill:           jQuery/ jQuery UI
+      - skill:           jQuery / jQuery UI
         level:           90%
       - skill:           Bootstrap
         level:           40%
@@ -213,12 +231,10 @@ params:
         level:           50%
       - skill:           Python 3
         level:           40%
-      - skill:           NodeJS / Express
-        level:           65%
 
       - section:         Développement
       - skill:           Gitlab CI/CD
-        level:           70%
+        level:           90%
       - skill:           Git
         level:           95%
       - skill:           Subversion
