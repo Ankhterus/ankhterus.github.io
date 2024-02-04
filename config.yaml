@@ -6,7 +6,9 @@ disable404:              true
 disablerss:              true
 disablesitemap:          true
 
-googleAnalytics:         UA-108139175-1
+services:
+  googleAnalytics:
+    ID: G-F13HE46DP3
 
 params:
   # Metadata
@@ -63,6 +65,7 @@ params:
     enable:              true
     list:
       - interest:        Escalade
+      - interest:        Parapente
       - interest:        Geekeries
 
 # Main content
@@ -87,11 +90,23 @@ params:
       #   details:         |
       #     Je pars à l'aventure au sein de la jungle de la recherche d'emploi afin de retrouver l’artefact du _CDI-au-projet-sympa-et-stimulant_. Si vous recherchez un _lead developer_ sur Strasbourg ou sa région, n'hésitez pas à me contacter.
 
+      - position:        SysSecOps
+        dates:           février 2024 - Aujourd'hui
+        company:         Région de Strasbourg
+        details:         |
+          Bien conscient des enjeux liés à la sécurité des données, des applications et des infrastructures, je mets à profit tout le savoir accumulé lors de mes expériences passées.
+
       - position:        Architecte Java et DevOps
-        dates:           juin 2018 - Aujourd'hui
+        dates:           juin 2018 - janvier 2024
         company:         Astek, Strasbourg
         details:         |
-          Je découvre le monde des ESN tout en m'amusant au sein d'une équipe soudée. Merci de m'avoir fait confiance !
+          Durant près de 6 ans, j'ai développé de très solides compétences dans les technologies des conteneurs et de leur orchestration. Ainsi, j'ai participé à l'évangélisation de ces dernières parmi l'équipe d'Astek Strasbourg et quelques-uns de ses clients en offrant mon support sur de nombreux projets. Ce travail transverse m'a permis de définir et de mettre en place les bonnes pratiques DevOps et de supervision avec l'aide de mes différents collègues impliqués.
+
+          Ces connaissances m'ont aussi servi à construire la plate-forme d'intégration continue du [groupe Astek](https://astekgroup.fr/) (basée sur les outils [GitLab](https://gitlab.com/), [GitLab CI/CD](https://docs.gitlab.com/ee/ci/), [SonarQube](https://www.sonarsource.com/products/sonarqube/) et [Sonatype Nexus Repository](https://www.sonatype.com/products/sonatype-nexus-repository) déployés dans un environnement [Kubernetes](https://kubernetes.io/)), qui est utilisée lors de mon départ par une petite centaine de collaborateurs du groupe à l'international.
+
+          En parallèle, j'ai approfondi mes connaissances Java en acquérant des compétences très pointues sur le _framework_ [Spring/Spring Boot](https://spring.io/), en ayant travaillé à la conception de nouvelles applications, en réalisant des audits de performance et de sécurité applicatives et en contribuant à de la tierce maintenance applicative. J'ai aussi développé de nouvelles compétences en applications Web monopages (_Single-Page Application_) avec les _frameworks_ [Angular](https://angular.io/) et [Vue.js](https://vuejs.org/).
+
+          Principaux clients : [Air France](https://wwws.airfrance.fr/), [ArianeGroup](https://www.ariane.group/), [ClinFlows](https://clinflows.com/), [CNIEL](https://www.filiere-laitiere.fr/), [EPELFI](https://www.livrefoncier.fr/), [Savencia](https://www.savencia.com/), [TNT/FedEx](https://www.tnt.com/)
 
       - position:        Directeur technique
         dates:           oct. 2010 - janv. 2018
@@ -128,6 +143,12 @@ params:
     icon:                fa-archive
     # intro:             |
     list:
+      - title:           Plate-forme d'intégration continue du groupe Astek
+        tagline:         |
+          Construction, support, maintenance et évolution de la PIC nationale du groupe Astek, utilisée pour héberger les projets internes et les projets de clients souhaitant externaliser le processus de développement.
+
+          Technologies : Kubernetes, K3s, GitLab, GitLab CI/CD, SonarQube, Nexus Repository
+
       - title:           BioSight
         url:             https://biosight.bionext.com/
         tagline:         |
@@ -136,7 +157,7 @@ params:
           Technologies : Hadoop, YARN/MapReduce2, HBase, Oozie, Elasticsearch, Hibernate, Jersey
 
       - title:           Alvinella cDNA
-        url:             http://lbgi.fr/Alvinella/
+        url:             https://lbgi.fr/Alvinella/
         tagline:         |
           Portail de partage et de recherches au sein des résultats de traitements et d'annotations des données de séquençage d'_Alvinella pompejana_.
 
@@ -149,72 +170,120 @@ params:
       - section:         Cloud Native
       - skill:           Kubernetes
         level:           90%
-      - skill:           Docker
+      - skill:           K3s
+        level:           90%
+      - skill:           Docker / Docker compose
         level:           90%
       - skill:           RKE / Rancher Kubernetes Engine
         level:           90%
       - skill:           CoreOS / Container Linux
         level:           65%
-      - skill:           Helm
-        level:           85%
-      - skill:           Prometheus
-        level:           70%
+      - skill:           Cloud Foundry
+        level:           50%
+      - skill:           Helm / Helmfile
+        level:           90%
+      - skill:           MinIO
+        level:           80%
+      - skill:           cert-manager
+        level:           75%
       - skill:           Rook
         level:           70%
       - skill:           KubeDB
         level:           70%
       - skill:           Istio
         level:           50%
-
-      - section:         Cloud computing
-      - skill:           Hadoop/MapReduce
-        level:           90%
-      - skill:           HBase
-        level:           90%
-      - skill:           Oozie
-        level:           60%
-      - skill:           Elasticsearch
-        level:           75%
-      - skill:           Cassandra
+      - skill:           Azure
+        level:           50%
+      - skill:           OVH Cloud
         level:           40%
+      - skill:           AWS
+        level:           30%
+
+      - section:         Supervision
+      - skill:           Prometheus
+        level:           75%
+      - skill:           Loki
+        level:           75%
+      - skill:           Grafana
+        level:           75%
+      - skill:           Sentry
+        level:           60%
       - skill:           Logstash
         level:           60%
       - skill:           Kibana
         level:           50%
 
       - section:         Provisioning
+      - skill:           Ansible
+        level:           85%
+      - skill:           Vagrant / VirtualBox
+        level:           85%
       - skill:           Terraform
         level:           75%
-      - skill:           Vagrant / VirtualBox
-        level:           80%
-      - skill:           Ansible
-        level:           80%
       - skill:           MAAS
         level:           66%
 
+      - section:         Cloud Computing
+      - skill:           Hadoop/MapReduce
+        level:           90%
+      - skill:           HBase
+        level:           90%
+      - skill:           Oozie
+        level:           60%
+      - skill:           Cassandra
+        level:           40%
+
+      - section:         Middleware
+      - skill:           MQTT
+        level:           80%
+      - skill:           ActiveMQ
+        level:           65%
+      - skill:           RabbitMQ
+        level:           65%
+      - skill:           Kafka
+        level:           60%
+
+      - section:         Authentification / Autorisations
+      - skill:           Keycloak
+        level:           75%
+      - skill:           HashiCorp Vault
+        level:           70%
+      - skill:           LDAP
+        level:           70%
+      - skill:           OpenLDAP
+        level:           65%
+      - skill:           Active Directory
+        level:           40%
+
       - section:         Java
-      - skill:           Java 1x
+      - skill:           Java 21+
         level:           100%
       - skill:           Maven
         level:           90%
       - skill:           Gradle
-        level:           50%
-      - skill:           Spring Boot
         level:           70%
-      - skill:           Hibernate / JPA
-        level:           95%
-      - skill:           Jersey / JAX-RS
-        level:           95%
-      - skill:           JAXB
-        level:           95%
-      - skill:           ProGuard
+      - skill:           Spring / Spring Boot
+        level:           90%
+      # - skill:           Hibernate / JPA
+      #   level:           95%
+      # - skill:           Jersey / JAX-RS
+      #   level:           95%
+      # - skill:           JAXB
+      #   level:           95%
+      - skill:           Gatling
         level:           85%
+      - skill:           ProGuard
+        level:           80%
       - skill:           javacc
         level:           80%
 
-      - section:         Autres langages / frameworks
-      - skill:           Javascript ES6
+      - section:         Langages et frameworks Web
+      - skill:           Javascript ES2023+
         level:           90%
+      - skill:           TypeScript
+        level:           70%
+      - skill:           Angular / RxJs / NgRx
+        level:           85%
       - skill:           Vue.js / Vuex / Vuetify
         level:           85%
       - skill:           NodeJS / Express
@@ -226,15 +295,29 @@ params:
       - skill:           jQuery / jQuery UI
         level:           90%
       - skill:           Bootstrap
-        level:           40%
+        level:           60%
+      - skill:           Tailwind CSS
+        level:           50%
+      - skill:           Less CSS
+        level:           50%
+      - skill:           SAAS
+        level:           50%
+      - skill:           Ionic Angular
+        level:           50%
       - skill:           Grails
         level:           50%
-      - skill:           Python 3
-        level:           40%
 
       - section:         Développement
+      - skill:           IntelliJ
+        level:           95%
+      - skill:           VS Code
+        level:           90%
+      - skill:           Suite Atlassian (Jira, Confluence, Bitbucket et Bamboo)
+        level:           60%
       - skill:           Gitlab CI/CD
         level:           90%
+      - skill:           GitHub Actions
+        level:           65%
       - skill:           Git
         level:           95%
       - skill:           Subversion
@@ -249,6 +332,10 @@ params:
         level:           84%
       - skill:           SQLite
         level:           70%
+      - skill:           Elasticsearch
+        level:           50%
+      - skill:           MongoDB
+        level:           50%
 
       - section:         Sysadmin
       - skill:           Ubuntu / Debian
@@ -258,10 +345,18 @@ params:
       - skill:           Apache HTTPD
         level:           90%
       - skill:           Nginx
-        level:           50%
+        level:           80%
+      - skill:           Træfik
+        level:           70%
       - skill:           HAproxy
         level:           60%
-      - skill:           Gitlab
+      - skill:           GitLab / GitLab CI/CD
+        level:           95%
+      - skill:           SonarQube
+        level:           95%
+      - skill:           Nexus Repository
+        level:           95%
+      - skill:           Docker registry
         level:           95%
       - skill:           Mattermost
         level:           70%
@@ -270,5 +365,13 @@ params:
       - skill:           Apache Archiva
         level:           85%
 
+      # - section:         Dans les limbes (oubliettes)
+      # - skill:           PHP
+      #   level:           80%
+      # - skill:           TCL/Tk
+      #   level:           80%
+      # - skill:           Python 3
+      #   level:           40%
+
   footer:
-    copyright:           ""
+    copyright:           "Oui au numérique, non au digital (sauf cadre intime)"
